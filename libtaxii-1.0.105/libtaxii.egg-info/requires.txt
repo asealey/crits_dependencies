@@ -1,2 +1,0 @@
-lxml>=2.3.2
-python-dateutil>=1.5

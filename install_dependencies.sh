@@ -56,8 +56,8 @@ then
 		echo "Installing ordereddict 1.1..."
 		cd ordereddict-1.1 && sudo ${PYBIN} setup.py install && cd ..
 	fi
-	echo "Installing python-dateutil 1.5..."
-	cd python-dateutil-1.5 && sudo ${PYBIN} setup.py install && cd ..
+	echo "Installing python-dateutil 2.2..."
+	cd python-dateutil-2.2 && sudo ${PYBIN} setup.py install && cd ..
 	echo "Installing UPX"
 	sudo apt-get -y install upx
 	echo "Installing M2Crypto"
@@ -95,14 +95,14 @@ else
 	exit
 fi
 
-echo "Installing MongoDB 2.6.1..."
-sudo cp mongodb-linux-x86_64-2.6.1/bin/* /usr/local/bin/
-echo "Installing PyMongo 2.7..."
-cd pymongo-2.7 && sudo ${PYBIN} setup.py install && cd ..
+echo "Installing MongoDB 2.6.4..."
+sudo cp mongodb-linux-x86_64-2.6.4/bin/* /usr/local/bin/
+echo "Installing PyMongo 2.7.2..."
+cd pymongo-2.7.2 && sudo ${PYBIN} setup.py install && cd ..
 echo "Installing DefusedXML 0.4.1..."
 cd defusedxml-0.4.1 && sudo ${PYBIN} setup.py install && cd ..
-echo "Installing Django 1.6.2..."
-cd Django-1.6.2 && sudo ${PYBIN} setup.py install && cd ..
+echo "Installing Django 1.6.5..."
+cd Django-1.6.5 && sudo ${PYBIN} setup.py install && cd ..
 echo "Installing Django Tastypie 0.11.0..."
 cd django-tastypie-0.11.0 && sudo ${PYBIN} setup.py install && cd ..
 echo "Installing Django Tastypie Mongoengine 0.4.5..."
@@ -122,9 +122,9 @@ echo "Installing Python pefile..."
 cd pefile-1.2.10-114 && sudo ${PYBIN} setup.py install && cd ..
 echo "Installing Python magic..."
 cd python-magic && sudo ${PYBIN} setup.py install && cd ..
-echo "Installing Yara 1.6..."
-cd yara-1.6 && sudo ./configure && sudo make && sudo make install && cd ..
-cd yara-python-1.6 && sudo ${PYBIN} setup.py install && cd ..
+echo "Installing Yara 2.1.0..."
+cd yara-2.1.0 && ./bootstrap.sh && sudo ./configure && sudo make && sudo make install
+cd yara-python && sudo ${PYBIN} setup.py install && cd ../..
 sudo ldconfig
 echo "Installing Pynids 0.6.1..."
 cd pynids-0.6.1
@@ -143,7 +143,7 @@ cd kombu-2.5.4 && sudo ${PYBIN} setup.py install && cd ..
 cd celery-3.0.12 && sudo ${PYBIN} setup.py install && cd ..
 cd django-celery-3.0.11 && sudo ${PYBIN} setup.py install && cd ..
 cd requests-v1.1.0-9 && sudo ${PYBIN} setup.py install && cd ..
-cd cybox-2.0.0b6 && sudo ${PYBIN} setup.py install && cd ..
-cd stix-1.0.0a7 && sudo ${PYBIN} setup.py install && cd ..
-cd libtaxii-1.0.105 && sudo ${PYBIN} setup.py install && cd ..
+cd cybox-2.1.0.5 && sudo ${PYBIN} setup.py install && cd ..
+cd stix-1.1.1.0 && sudo ${PYBIN} setup.py install && cd ..
+cd libtaxii-1.1.102 && sudo ${PYBIN} setup.py install && cd ..
 echo "Dependency installations complete!"

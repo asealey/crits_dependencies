@@ -1,0 +1,10 @@
+*.pyc
+*.swp
+*.swo
+build/
+dist/
+libtaxii.egg-info/
+venv/
+.tox
+
+docs/_build/
