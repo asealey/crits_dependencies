@@ -18,7 +18,7 @@ to download the proper tagged commit of the repo.
 Once you have downloaded or cloned the repository, you will want to run the
 install_dependencies.sh script which comes with it.
 
-`sudo ./install_dependencies.sh`
+`sudo -E ./install_dependencies.sh`
 
 This will take care of using the OS's package management system to download some
 basic packages before installing the local content.
