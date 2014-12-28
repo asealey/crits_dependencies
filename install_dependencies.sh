@@ -110,7 +110,7 @@ cd django-tastypie-mongoengine-0.4.5 && sudo ${PYBIN} setup.py install && cd ..
 echo "Installing MongoEngine 0.8.7..."
 cd mongoengine-0.8.7 && sudo ${PYBIN} setup.py install && cd ..
 echo "Installing ssdeep..."
-cd ssdeep-2.11 && sudo ./configure && sudo make && sudo make install && cd ..
+cd ssdeep-2.11.1 && sudo ./configure && sudo make && sudo make install && cd ..
 cd pydeep-0.2 && sudo ${PYBIN} setup.py install && cd ..
 if [ -f /usr/local/lib/libfuzzy.so.2.0.0 ];
 then
